@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    --neddley-font: "Caveat", cursive;
+    --neddley-size: 13vw;
+
+    --font-size-author: 1.8vw;
+    --font-size-portfolio: 10vw;
+
+    --title-font: "Cinzel", serif;
+    --font-size-title: 5vw;
+
+    --p-size: 1.5vw;
+}
+
+nav{
+    background-color: white;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inner-container {
+    display: inline-block;
+    position: relative;
+}
+
+#nickname {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+    font-family: var(--neddley-font);
+    font-size: var(--neddley-size);
+    z-index: 1;
+}
+
+#autor {
+    position: absolute;
+    top: 80%;
+    left: 100%;
+    width: 17vw;
+    font-size: var(--font-size-author);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1;
+}
+
+#home-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: -8vw auto;
+    transform: rotate(-4deg);
+    max-width: 60vw;
+    z-index: 0;
+}
+
+h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-portfolio);
+}
+
+#subtitle{
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-author);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    padding-top: 10vw;
+}
+
+.title{
+    width: 30vw;
+    font-size: var(--font-size-title);
+    font-family: var(--title-font);
+}
+
+p{
+    font-size: var(--p-size);
+    width: 35vw;
+    padding-top: 3.5vw;
+    margin-left: 4vw;
+}
+
+.bn{
+    filter: grayscale(100%);
+}
+
+#about1{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    gap: 9vw;
+}
+
+#setup{
+    width: 25vw;
+    transform: rotate(5deg);
+    z-index: 1;
+}
+
+#about2{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    gap: 5vw;
+}
+
+#volcan{
+    transform: scale(90%);
+    transform: rotate(-7deg);
+    z-index: 0;
+}
+
+.img-size{
+    width: 10vw;
+    border-radius: 10%;
+}
+
+#skills-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+#skills-stack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+#skills-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#skills-list{
+    margin-top: 5vw;
+}
+
+#skills-list h5{
+    font-size: var(--font-size-author);
+}
+
+#skills-list ul li{
+    font-size: var(--p-size);
+}
+
+a[aria-disabled="true"] {
+    pointer-events: none;
+    color: gray;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+#works .title, #cases .title{
+    margin-left: 20vw;
+}
+
+#works_div{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 5vw 0;
+}
+
+.works_cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.works_cards a{
+    width: 20vw;
+}
+
+.work_img{
+    width: 20vw;
+    height: 15vw;
+}
