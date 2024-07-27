@@ -169,14 +169,15 @@ a[aria-disabled="true"] {
     cursor: not-allowed;
 }
 
-#works .title, #cases .title{
+#ux .title, #front .title, #cases .title, #contact .title, #contact h4:first-of-type{
     margin-left: 20vw;
 }
 
 #works_div{
     display: inline-flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5vw;
     margin: 5vw 0;
 }
 
@@ -198,4 +199,13 @@ a{
 .work_img{
     width: 20vw;
     height: 15vw;
+}
+
+#contact h4:first-of-type{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4 span{
+    font-family:var(--neddley-font);
+    font-size: 2vw;
 }
