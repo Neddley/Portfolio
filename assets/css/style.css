@@ -268,7 +268,3 @@ button:active .button_cv, button:active .button_form {
   /* Push the button downwards when pressed */
   transform: translateY(0);
 }
-
-#buttons{
-
-}
