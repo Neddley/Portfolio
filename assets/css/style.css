@@ -214,24 +214,24 @@ h4 span {
   font-size: 2vw;
 }
 
-#contact img {
+#contact-img {
+  transform: rotate(10deg);
+}
+
+#contact-img img {
   filter: grayscale(1);
   width: 30vw;
 }
 
-#contact-div1{
+#contact-div1 {
   display: inline-flex;
   padding-bottom: 7vw;
 }
 
-#contact-div2{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 7vw;
-} 
-
-#contact-img {
-  transform: rotate(10deg);
+#contact-div2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7vw;
 }
 
 button {
@@ -247,7 +247,8 @@ button {
   margin: 1vw;
 }
 
-.button_cv, .button_form {
+.button_cv,
+.button_form {
   display: block;
   box-sizing: border-box;
   border: 2px solid var(--button_outline_color);
@@ -259,12 +260,14 @@ button {
   transition: transform 0.1s ease;
 }
 
-button:hover .button_cv, button:hover .button_form {
+button:hover .button_cv,
+button:hover .button_form {
   /* Pull the button upwards when hovered */
   transform: translateY(-0.33em);
 }
 
-button:active .button_cv, button:active .button_form {
+button:active .button_cv,
+button:active .button_form {
   /* Push the button downwards when pressed */
   transform: translateY(0);
 }
