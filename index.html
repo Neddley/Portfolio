@@ -27,7 +27,7 @@
   </head>
   <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
         <button
           class="navbar-toggler ms-auto"
@@ -299,15 +299,70 @@
         <div id="contact-div2">
           <div id="buttons">
             <button>
-              <span class="button_cv">Download Resume</span>
+              <span id="button_cv">Download Resume</span>
             </button>
             <button>
-              <span class="button_form">Contact Form</span>
+              <span id="button_form">Contact Form</span>
             </button>
           </div>
         </div>
       </section>
     </main>
+    <div id="overlay">
+      <div id="formContainer">
+        <form id="myForm">
+          <p class="form-heading">Get In Touch</p>
+
+          <div class="form-field">
+            <input
+              required=""
+              placeholder="Name"
+              class="input-field"
+              type="text"
+            />
+          </div>
+
+          <div class="form-field">
+            <input
+              required=""
+              placeholder="Email"
+              class="input-field"
+              type="email"
+            />
+          </div>
+
+          <div class="form-field">
+            <input
+              required=""
+              placeholder="Subject"
+              class="input-field"
+              type="text"
+            />
+          </div>
+
+          <div class="form-field">
+            <textarea
+              required=""
+              placeholder="Message"
+              cols="30"
+              rows="3"
+              class="input-field"
+            ></textarea>
+          </div>
+          <div style="display: inline-block;">
+            <button type="submit">
+              <span id="submit_form">Enviar</span>
+            </button>
+            <button type="button">
+              <span id="close_form">Cerrar</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="thankYouMessage">¡Gracias por tu mensaje!</div>
+    <script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
