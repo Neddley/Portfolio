@@ -236,7 +236,6 @@ a[aria-disabled="true"] {
 
 .works_cards {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -252,12 +251,6 @@ a {
 .work_img {
   width: 20vw;
   height: 15vw;
-}
-
-
-
-#contact h4:first-of-type {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h4 span {
@@ -408,4 +401,169 @@ form {
 form button{
   width: 30%;
   align-content: space-between;
+}
+
+/* MEDIAQUERYS */
+
+@media (min-width: 701px) and (max-width: 820px){
+  nav{
+    background-color: transparent;
+  }
+
+  .navbar-toggler{
+    background-color: white;
+  }
+
+  .navbar-nav{
+    background-color: white;
+    opacity: 50%;
+  }
+
+  li{
+    margin-left: auto;
+  }
+
+  .nav-link{
+    color: #000000;
+  }
+
+  #about1{
+    gap: 6vw;
+  }
+
+  .title{
+    font-size: 7vw;
+    width: 40vw;
+  }
+
+  #setup{
+    width: 35vw;
+  }
+
+  #about1{
+    justify-content: normal;
+  }
+
+  #about2{
+    gap:0;
+  }
+
+  #about2 p{
+    padding-top: 5vw;
+    font-size: var(--p-size)+15%;
+  }
+
+  #volcan{
+    transform: rotate(-3deg) scale(70%);
+  }
+  #skills-list h5, #skills-list ul li{
+    font-size: 2.5vw;
+  }
+
+  .img-size{
+    width: 11vw;
+  }
+
+  #about .title, #skills .title, #ux .title, #front .title, #cases .title{
+    margin-left: 10vw;
+  }
+
+  #works_div{
+    gap: 9vw;
+  }
+
+  .works_cards a h4{
+    text-align: center;
+  }
+
+  .works_cards a h5{
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  #contact .title{
+    margin-left: 15vw;
+  }
+
+  h4 span{
+    font-size: 3.5vw;
+  }
+
+  h4{
+    font-size: 1.8vw;
+  }
+
+  header{
+    padding: 10vw 0;
+  }
+
+  section{
+    padding-bottom: 10vw;
+  }
+}
+
+@media (max-width: 700px){
+
+  nav{
+    background-color: transparent;
+  }
+
+  header{
+    padding: 55vw 0;
+  }
+
+  #nickname{
+    font-size: 30vw;
+  }
+
+  #autor{
+    font-size: 3vw;
+    width: 30vw;
+    left: 70%;
+    top: 95%;
+  }
+
+  #home-img{
+    max-width: 90vw;
+  }
+
+  h2{
+    font-size: 15vw;
+  }
+
+  #subtitle{
+    font-size: 5vw;
+  }
+
+  #about .title, #skills .title, #ux .title, #front .title, #cases .title{
+    margin: auto;
+    text-align: center;
+    font-size: 10vw;
+    width: 80vw;
+  }
+
+  #about1{
+    flex-direction: column;
+  }
+
+  #setup{
+    transform: none;
+    width: 100vw;
+  }
+
+  #about2{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about2 p{
+    width: 80vw;
+    margin: 5vw auto;
+    font-size: 4vw;
+  }
+
+  #volcan{
+    width: 100vw;
+    transform: none;
+  }
 }
