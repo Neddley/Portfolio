@@ -307,7 +307,7 @@ button {
 }
 
 button:hover #button_cv,
-button:hover #button_form {
+button:hover #button_form, button:hover #submit_form, button:hover #close_form{
   transform: translateY(-0.33em);
 }
 
@@ -508,8 +508,27 @@ form button{
     background-color: transparent;
   }
 
+  .navbar-toggler{
+    background-color: white;
+  }
+
+  .navbar-nav{
+    background-color: white;
+    opacity: 80%;
+    width: 100%;
+  }
+
+  .nav-item{
+    margin-left: auto;
+    
+  }
+
+  .nav-link{
+    color: #000000;
+  }
+
   header{
-    padding: 55vw 0;
+    padding: 50vw 0;
   }
 
   #nickname{
@@ -535,11 +554,12 @@ form button{
     font-size: 5vw;
   }
 
-  #about .title, #skills .title, #ux .title, #front .title, #cases .title{
+  #about .title, #skills .title, #ux .title, #front .title, #cases .title, #contact .title{
     margin: auto;
     text-align: center;
     font-size: 10vw;
     width: 80vw;
+    padding-top: 5vw;
   }
 
   #about1{
@@ -565,5 +585,108 @@ form button{
   #volcan{
     width: 100vw;
     transform: none;
+  }
+
+  #skills-img{
+    flex-direction: initial;
+  }
+
+  .img-size{
+    width: 25vw;
+  }
+
+  #skills-div{
+    flex-direction: column;
+  }
+
+  #skills-list h5{
+    font-size: 7vw;
+  }
+
+  #skills-list ul{
+    padding-bottom: 7vw;
+  }
+
+  #skills-list ul li{
+    font-size: 5vw;
+  }
+
+  #works_div{
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }  
+
+  .works_cards{
+    padding: 10vw 0;
+  }
+
+  .works_cards a{
+    width: 100vw;
+  }
+
+  .work_img{
+    width: 100vw;
+    height: 60vw;
+  }
+  
+  .works_cards a h4{
+    text-align: center;
+    font-size: 7vw;
+  }
+
+  .works_cards a h5{
+    text-align: center;
+  }
+
+  #contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-div1{
+    align-items: center;
+    flex-direction: column;
+    padding: 20vw 0;
+  }
+
+  #contact h4:first-of-type{
+    margin-left: 0vw;
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  h4 span{
+    font-size: 10vw;
+  }
+
+  #contact-img{
+    transform: none;
+  }
+
+  #contact-img img{
+    width: 100vw;
+  }
+
+  #buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    padding-bottom: 25vw;
+  }
+
+  .form-heading{
+    font-size: 7vw;
+    width: 70vw;
+  }
+
+  form button{
+    width: 40%;
+  }
+
+  #form-buttons{
+    padding-bottom: 5vw;
   }
 }

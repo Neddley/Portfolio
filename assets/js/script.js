@@ -35,3 +35,17 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         document.getElementById('thankYouMessage').style.display = 'none';
     }, 3000);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var navLinks = document.querySelectorAll('.nav-link');
+    var navCollapse = document.querySelector('.navbar-collapse');
+
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            if (window.innerWidth <= 992) { // Limitar el script a tablets y móviles
+                var bsCollapse = new bootstrap.Collapse(navCollapse);
+                bsCollapse.hide();
+            }
+        });
+    });
+});
